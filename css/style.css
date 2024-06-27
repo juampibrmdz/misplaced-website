@@ -1,0 +1,209 @@
+
+*{
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    margin: 0% 10%;
+}
+
+.logoybarra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    flex: 1;
+}
+.search-bar input {
+    width: 30%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.cart-icon {
+    flex: 1;
+    text-align: right;
+}
+
+.cart-icon i{
+    font-size: 35px;
+}
+
+
+header img {
+    width: 60%;
+}
+
+header input {
+    width: 10%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    opacity: 80%;
+}
+
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin: 0 auto;
+}
+
+header nav ul li {
+    font-size: 18px;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: black;
+    opacity: 100%;
+
+}
+
+.carousel-inner img{
+    height: 400px;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secprod {
+    margin: 1% 10%;
+}
+main section .productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+main section .productos article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+
+main section .productos article button:hover{
+    background-color: rgb(73, 73, 73);
+    scale: 1.05;
+}
+
+main section .producto h4 {
+    font-size: 17px;
+}
+
+main section .producto button {
+    text-align: center;
+    text-transform: capitalize;
+    background-color: rgb(36, 35, 35);
+    color: white;
+    padding: 4px;
+}
+h4 {
+    text-transform: capitalize;
+}
+
+.seguinos{
+    text-align: center;
+    margin: 70px;
+}
+.seguinos img{
+    width: 250px;
+}
+
+footer{
+    height: 200px;
+    justify-content: center;
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
+
+.redes{
+    text-align: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.redes i{
+    color: white;
+}
+
+footer p{
+    font-size: 15px;
+    text-transform: capitalize;
+    padding-top: 25px;
+    margin-bottom: -5px;
+    text-align: center;
+}
+
+@media(max-width: 1900px){
+    main section .productos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    main section .productos article {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-items: center;
+        width: 80%;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1600px){
+    main section .productos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+    main section .productos article {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-items: center;
+        width: 70%;
+        justify-content: center;
+    }
+}
+@media(max-width: 400px){
+    main section .productos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+    main section .productos article {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-items: center;
+        width: 30%;
+        justify-content: center;
+    }
+    .seguinos img{
+        width: 150px;
+    }
+}
